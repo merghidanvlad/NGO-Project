@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1" />
+    <title>ÎN SLUJBA MUNTELUI</title>
+    <link rel="stylesheet" href="styles/style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0cf61eff5e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="home.html"
+          ><img width="120" height="90" src="/images/logo.png"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="home.html">Acasă</a></li>
+            <li><a href="about.html">Despre Noi</a></li>
+            <li><a href="voluntar.html">Voluntariat</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="sub-content">
+        <h1>Voluntariat</h1>
+        <div class="sub-line"></div>
+      </div>
+    </section>
+    <section class="voluntar">
+      <h1>De ce să devin voluntar?</h1>
+      <p>
+        Voluntariatul la Asociația ÎN SLUJBA MUNTELUI îmbină plăcerea drumeției
+        în munți cu satisfacția de a lăsa în urma ta poteci mai curate, mai
+        sigure și prietenoase pentru drumeții care le vor călca cu pasul.
+        Refacem marcajele învechite, curățăm potecile de vegetație și gunoaie,
+        instalăm săgeți și stâlpi de marcaj, reconstruim podețe, scări, refugii.
+      </p>
+      <div class="row">
+        <div class="voluntar-col">
+          <img src="images/5.jpg" />
+        </div>
+        <div class="voluntar-col">
+          <img src="images/6.jpg" />
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="line"></div>
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100070422455835"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="https://www.youtube.com/@inslujbamuntelui5321/featured"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://www.instagram.com/inslujbamuntelui/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="home.html">Acasă</a></li>
+          <li><a href="about.html">Despre Noi</a></li>
+          <li><a href="voluntar.html">Voluntariat</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="copy">
+          Copyright &copy; Merghidan Vlad-Cristian. All Rights Reserved
+        </div>
+      </div>
+    </section>
+    <script>
+      const navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
