@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.header {
+  min-height: 100vh;
+  max-width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/mount.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 20px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.nav-links ul li a:hover {
+  color: rgb(95, 142, 26);
+  transition: 0.3s ease;
+}
+.content {
+  margin-top: 170px;
+  color: whitesmoke;
+  text-align: center;
+}
+.content h2 {
+  font-size: 4vmin;
+}
+.line {
+  width: 150px;
+  height: 4px;
+  background: rgb(95, 142, 26);
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.content h1 {
+  font-size: 7vmin;
+  top: 50px;
+  bottom: 30px;
+}
+nav .fa-solid {
+  display: none;
+}
+@media (max-width: 850px) {
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    background: rgb(25, 65, 63);
+    height: 100vh;
+    width: 200px;
+    right: -200px;
+    top: 0;
+    text-align: left;
+    transition: 0.5s ease;
+  }
+  nav .fa-solid {
+    display: block;
+    color: whitesmoke;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  nav .fa-solid:hover {
+    color: rgb(95, 142, 26);
+    transition: 0.3s ease;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background-color: rgb(248, 255, 240);
+}
+.footer-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 20px;
+}
+.footer-links ul li a {
+  color: grey;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.icons .fa-brands {
+  color: rgb(95, 142, 26);
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.icons .fa-brands:hover {
+  transform: scale(1.3);
+}
+.copy {
+  background-color: rgb(227, 247, 205);
+  font-size: 12px;
+  padding: 5px;
+}
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/1.jpg);
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+}
+.sub-line {
+  width: 150px;
+  height: 4px;
+  background: rgb(95, 142, 26);
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.sub-content {
+  margin-top: 70px;
+  color: whitesmoke;
+  text-align: center;
+}
+.sub-content h1 {
+  font-size: 7vmin;
+  top: 50px;
+  bottom: 30px;
+}
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.about-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.about-col img {
+  width: 100%;
+}
+.about-col h2 {
+  padding-top: 0;
+}
+.about-col ul {
+  padding: 15px 0 25px;
+}
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+.location iframe {
+  width: 100%;
+}
+.contact {
+  width: 80%;
+  margin: auto;
+}
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-col div .fa-solid {
+  font-size: 28px;
+  color: rgb(95, 142, 26);
+  margin: 10px;
+  margin-right: 30px;
+}
+.contact-col div p {
+  padding: 0;
+}
+.contact-col div h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: rgb(83, 83, 83);
+  font-weight: 400;
+}
+.row {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-between;
+}
+.btn {
+  background-color: rgb(95, 142, 26); 
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.contact-col input,
+.contact-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.voluntar {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.voluntar-col {
+  flex-basis: 40%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.voluntar-col img {
+  width: 100%;
+  
+}
+.voluntar-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
